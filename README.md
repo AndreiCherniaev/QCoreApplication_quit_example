@@ -5,6 +5,8 @@
  
  To exit from you infinite cycle QCoreApplication::exec()
  try this
+ 
     QTimer::singleShot(1000, this, &rial::closeApp); //if you need process some code in closeApp()
  or this
+ 
     QTimer::singleShot(1000, QCoreApplication::instance(), SLOT(quit())); //if you need quit() only
