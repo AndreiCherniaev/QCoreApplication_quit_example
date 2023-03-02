@@ -14,4 +14,4 @@
 Also you can use Ctrl+C to exit. If user send Ctrl+C signal QCoreApplication_quit_example will use non-Qt function SigInt_Handler(). It tested on Ubuntu.
 
 # QCoreApplication_quit_SIGINT_example
-QCoreApplication_quit_SIGINT_example is more powerfull then QCoreApplication_quit_example. If user send Ctrl+C signal QCoreApplication_quit_SIGINT_example will use Qt non-static method rial::handleSignal(). In this method Qt start QTimer for 3 seconds and after do closeApp(). If user dont press Ctrl+C in console for QCoreApplication_quit_SIGINT_example this app will wating forever.
+QCoreApplication_quit_SIGINT_example is more powerfull then QCoreApplication_quit_example. If user send Ctrl+C signal QCoreApplication_quit_SIGINT_example will use Qt non-static method rial::handleSignal(). In this method Qt start QTimer for 3 seconds and after do closeApp(). If user don't press Ctrl+C in console for QCoreApplication_quit_SIGINT_example this app will wating forever.
