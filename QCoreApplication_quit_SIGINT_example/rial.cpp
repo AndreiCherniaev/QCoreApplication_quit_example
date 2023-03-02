@@ -10,7 +10,7 @@ rial::rial(QObject *parent)
 
 rial::~rial()
 {
-   // delete this;
+   // delete this; //not need because rial has a parent, you can check it using  qDebug() << "par=" << s.parent();
 }
 
 rial *rial::m;
