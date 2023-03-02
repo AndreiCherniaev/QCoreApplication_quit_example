@@ -5,13 +5,13 @@
 #include <QTimer>
 #include <QDebug>
 
-class rial : public QObject
+class Rial : public QObject
 {
     Q_OBJECT
 
 public:
-    rial(QObject *parent);
-    ~rial();
+    Rial(QObject *parent);
+    ~Rial();
 
 public slots:
     void closeApp();

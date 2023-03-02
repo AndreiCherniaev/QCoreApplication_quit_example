@@ -5,18 +5,18 @@
 #include <QTimer>
 #include <QDebug>
 
-class rial : public QObject
+class Rial : public QObject
 {
     Q_OBJECT
-    static rial* m;
+    static Rial* m;
     void handleSignal(int num);
-    static void setSignalHandlerObject(rial* mc) {
-        rial::m= mc;
+    static void setSignalHandlerObject(Rial* mc) {
+        Rial::m= mc;
     }
 
 public:
-    rial(QObject *parent);
-    ~rial();
+    Rial(QObject *parent);
+    ~Rial();
 
     static void callSignalHandler(int num){
         m->handleSignal(num);

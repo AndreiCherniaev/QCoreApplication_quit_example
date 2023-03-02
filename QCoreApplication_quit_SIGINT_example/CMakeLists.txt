@@ -12,7 +12,7 @@ find_package(QT NAMES Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 qt_add_executable(${PROJECT_NAME}
-    main.cpp rial.cpp rial.h
+    main.cpp Rial.cpp Rial.h
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
