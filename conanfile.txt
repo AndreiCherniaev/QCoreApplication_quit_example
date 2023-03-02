@@ -1,5 +1,0 @@
-[requires]
-qt/6.4.1@#a4a6e592bb7c2310c36492de555fbcff
-
-[generators]
-cmake
