@@ -18,7 +18,7 @@ public:
     Rial(QObject *parent);
     ~Rial();
 
-    static void callSignalHandler(int num){
+    static void callSignalHandler(int num){ //num is number of handler, in case of SIGINT (Ctrl+C) it is 2
         rialSelf->handleSignal(num);
     }
 
