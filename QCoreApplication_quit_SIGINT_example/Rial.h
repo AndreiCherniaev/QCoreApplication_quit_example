@@ -8,10 +8,10 @@
 class Rial : public QObject
 {
     Q_OBJECT
-    static Rial* m;
+    static Rial* rialSelf;
     void handleSignal(int num);
-    static void setSignalHandlerObject(Rial* mc) {
-        Rial::m= mc;
+    static void setSignalHandlerObject(Rial* newRealSelf) {
+        Rial::rialSelf= newRealSelf;
     }
 
 public:
@@ -19,7 +19,7 @@ public:
     ~Rial();
 
     static void callSignalHandler(int num){
-        m->handleSignal(num);
+        rialSelf->handleSignal(num);
     }
 
 public slots:

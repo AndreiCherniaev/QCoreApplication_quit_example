@@ -13,7 +13,7 @@ Rial::~Rial()
    // delete this; //not need because rial has a parent, you can check it using  qDebug() << "par=" << s.parent();
 }
 
-Rial *Rial::m;
+Rial *Rial::rialSelf;
 void Rial::handleSignal(int num){
     QTimer::singleShot(3000, this, &Rial::closeApp); //if you need process some code in closeApp()
     qDebug()<<"Signal handled: " << num << "closeApp() after 3 sec";
