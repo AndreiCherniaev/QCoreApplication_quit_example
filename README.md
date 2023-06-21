@@ -28,5 +28,5 @@ You can send SIGINT by Ctr+C key. But also you can send SIGINT using Debug mode 
 <p align="center">
   <img alt="Qt Creator. Debug using gdb creator. Emit signal 2 via gdb console" src="https://github.com/AndreiCherniaev/QCoreApplication_quit_example/blob/38b9c07d8a77a3e9122f64366c1c3d31b9c12061/Qt%20Creator.%20GDB.%20signal%202.png?raw=true" width="800">
   <br>
-    <em>Debug in Qt Creator</em>
+    <em>	SIGINT by GDB in Qt Creator</em>
 </p>
