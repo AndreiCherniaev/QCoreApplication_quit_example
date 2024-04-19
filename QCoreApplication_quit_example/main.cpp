@@ -4,7 +4,7 @@
 
 void SigInt_Handler(int n_signal){
     printf("interrupted with code %u\n", n_signal); //Ctrl+C
-    QCoreApplication::instance()->quit();  //exit(1);
+    QCoreApplication::instance()->quit(); //exit(1);
 }
 
 int main(int argc, char *argv[])
