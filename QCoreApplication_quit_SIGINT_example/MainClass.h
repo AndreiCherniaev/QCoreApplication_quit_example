@@ -5,18 +5,18 @@
 #include <QTimer>
 #include <QDebug>
 
-class Rial : public QObject
+class MainClass : public QObject
 {
     Q_OBJECT
-    static Rial* rialSelf;
+    static MainClass* rialSelf;
     void handleSignal(int num);
-    static void setSignalHandlerObject(Rial* newRealSelf) {
-        Rial::rialSelf= newRealSelf;
+    static void setSignalHandlerObject(MainClass* newRealSelf) {
+        MainClass::rialSelf= newRealSelf;
     }
 
 public:
-    Rial(QObject *parent);
-    ~Rial();
+    MainClass(QObject *parent);
+    ~MainClass();
 
     static void callSignalHandler(int num){ //num is number of handler, in case of SIGINT (Ctrl+C) it is 2
         rialSelf->handleSignal(num);

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(console_test1 LANGUAGES CXX) #use for ${PROJECT_NAME}
+project(QCoreApplication_quit_example LANGUAGES CXX) #use for ${PROJECT_NAME}
 
 set(CMAKE_AUTOMOC ON)
 # set(CMAKE_AUTOUIC ON) #for GUI apps
@@ -12,7 +12,7 @@ find_package(QT NAMES Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 qt_add_executable(${PROJECT_NAME}
-    main.cpp Rial.cpp Rial.h
+    main.cpp MainClass.cpp MainClass.h
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC

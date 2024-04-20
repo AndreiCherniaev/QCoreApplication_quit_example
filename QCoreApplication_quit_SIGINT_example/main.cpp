@@ -1,14 +1,14 @@
 #include <QCoreApplication>
 #include <signal.h>
-#include "Rial.h"
+#include "MainClass.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    Rial rial(QCoreApplication::instance());
+    MainClass mainClass(QCoreApplication::instance());
 
     struct sigaction hup;
-    hup.sa_handler = rial.callSignalHandler;
+    hup.sa_handler = mainClass.callSignalHandler;
     sigemptyset(&hup.sa_mask);
     hup.sa_flags = 0;
     hup.sa_flags |= SA_RESTART;
