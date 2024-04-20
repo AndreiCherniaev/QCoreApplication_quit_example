@@ -2,7 +2,6 @@
 
 #include <QCoreApplication>
 #include <QObject>
-#include <QTimer>
 #include <QDebug>
 
 class MainClass : public QObject

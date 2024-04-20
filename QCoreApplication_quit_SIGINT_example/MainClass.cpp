@@ -1,3 +1,4 @@
+#include <QTimer>
 #include "MainClass.h"
 
 MainClass::MainClass(QObject *parent)
