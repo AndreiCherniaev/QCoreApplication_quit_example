@@ -1,5 +1,5 @@
 # QCoreApplication_quit_example
- simpe example How to exit after QCoreApplication::exec()
+ simple example How to exit after QCoreApplication::exec()
  
  Run app and after 3 second QCoreApplication_quit_example will close automatically with message "good bye".
  
